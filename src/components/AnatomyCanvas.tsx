@@ -20,11 +20,11 @@ import { ANATOMY_STRUCTURES } from '../data/anatomyData';
 
 const ANATOMY_PRIMARY_URL =
   'https://raw.githubusercontent.com/al-mah-fuz/Anatomy07/main/anatomy.glb';
-const ANATOMY_FALLBACK_URL = '/models/anatomy.glb';
+const ANATOMY_FALLBACK_URL = `${((import.meta as any).env?.BASE_URL || './').replace(/\/$/, '')}/models/anatomy.glb`;
 
 const SKELETON_PRIMARY_URL =
   'https://raw.githubusercontent.com/al-mah-fuz/Anatomy07/main/skeleton.glb';
-const SKELETON_FALLBACK_URL = '/models/skeleton.glb';
+const SKELETON_FALLBACK_URL = `${((import.meta as any).env?.BASE_URL || './').replace(/\/$/, '')}/models/skeleton.glb`;
 
 interface AnatomyCanvasProps {
   onSelectStructure: (structureState: SelectedStructureState | null) => void;
