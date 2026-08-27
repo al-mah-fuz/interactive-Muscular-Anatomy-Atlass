@@ -1,0 +1,6 @@
+{
+  "name": "3D Human Muscular Anatomy Atlas",
+  "description": "Interactive 3D anatomical atlas of the human muscular system with 3D raycasting selection, muscle isolation, anatomical regional breakdowns, and medical study reference tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
